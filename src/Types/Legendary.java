@@ -29,5 +29,7 @@ public class Legendary extends Pokemon {
         msg += "\n" + this.description;
         msg += "\n" + "══════════════════════════════════════════════════════════════";
         return msg;
+
+        //TODO: poner que si no hay datos aparezcan interrogaciones
     }
 }
