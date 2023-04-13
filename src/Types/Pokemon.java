@@ -56,14 +56,14 @@ public class Pokemon {
 
     @Override
     public String toString() {
-        String msg = "\n" + "════════════════════════════════════";
+        String msg = "\n" + "══════════════════════════════════════════════════════════════";
         msg += "\n" + this.name.toUpperCase();
         msg += "\n" + this.type.toUpperCase();
         msg += "\n" + "HT    " + this.height;
         msg += "\n" + "WT    " + this.weight + "lb";
-        msg += "\n" + "──█──█──█──█────────────█──█──█──█──";
+        msg += "\n" + "──█──█──█──█──────────────────────────────────────█──█──█──█──";
         msg += "\n" + this.description;
-        msg += "\n" + "════════════════════════════════════";
+        msg += "\n" + "══════════════════════════════════════════════════════════════";
         return msg;
     }
 }

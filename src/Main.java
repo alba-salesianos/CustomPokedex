@@ -7,11 +7,9 @@ public class Main {
 
         System.out.println(pikachu);
 
-        Legendary articuno = new Legendary("Articuno", "Freeze", "5'07\"", 122.1, "It’s said that this Pokémon’s beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it.", "??????");
+        Legendary articuno = new Legendary("Articuno", "Freeze", "5'07\"", 122.1, "It’s said that this Pokémon’s beautiful blue wings are made of ice. Articuno flies over snowy mountains, its long tail fluttering along behind it.", "Seafoam Islands");
 
         System.out.println(articuno);
-
-        // TODO: add and commit this
 
     }
 
