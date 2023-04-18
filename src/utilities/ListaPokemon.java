@@ -58,16 +58,23 @@ public class ListaPokemon {
             System.out.println("Este pokemon no se encuentra en la lista.");
         }
 
-
-
     }
 
-    @Override
-    public String toString() {
+    public Pokemon returnPokemon(int position){
+        if(pokemonList[position]!=null){
+            return pokemonList[position];
+        } else {
+            return null;
+        }
+    }
+
+    public void showPokemonList(){
         String msg = "";
         for (int i = 0; i < pokemonList.length; i++) {
-            msg += "\n" + pokemonList[i];
+            if(pokemonList[i]!=null){
+                msg += "\n" + pokemonList[i].toString();
+            }
         }
-        return msg;
+        System.out.println(msg);
     }
 }
