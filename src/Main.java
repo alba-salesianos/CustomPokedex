@@ -2,8 +2,77 @@ import Types.Legendary;
 import Types.Pokemon;
 import utilities.ListaPokemon;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        ListaPokemon spottedPokemon = new ListaPokemon();
+        ListaPokemon caughtPokemon = new ListaPokemon();
+
+        int option = -1;
+
+        Scanner keyboard = new Scanner(System.in);
+
+        while (option != 6) {
+
+            String boxGraphic = "\n╔═════════════════════════════════════════╗";
+            boxGraphic += "\n║              P O K É D E X              ║";
+            boxGraphic += "\n╟─────────────────────────────────────────╢";
+            boxGraphic += "\n║        ¡Te damos la bienvenida          ║ ";
+            boxGraphic += "\n║             a esta Pokédex!             ║";
+            boxGraphic += "\n║                                         ║";
+            boxGraphic += "\n║            Elige una opción             ║";
+            boxGraphic += "\n║                                         ║";
+            boxGraphic += "\n║ 1. Añadir Pokémon avistado              ║";
+            boxGraphic += "\n║ 2. Añadir avistamiento legendario       ║";
+            boxGraphic += "\n║ 3. Pasar a capturados                   ║";
+            boxGraphic += "\n║ 4. Mostrar lista de avistados           ║";
+            boxGraphic += "\n║ 5. Mostrar lista de capturados          ║";
+            boxGraphic += "\n║ 6. Cerrar la Pokédex                    ║";
+            boxGraphic += "\n║                                         ║";
+            boxGraphic += "\n╚═════════════════════════════════════════╝";
+
+            System.out.println(boxGraphic);
+            option = keyboard.nextInt();
+            keyboard.nextLine();
+
+
+            switch (option) {
+                case 1:
+
+                    break;
+
+                case 2:
+
+                    break;
+
+                case 3:
+
+                    break;
+
+
+                case 4:
+
+                    break;
+
+                case 6:
+
+                    break;
+
+                default:
+
+                    break;
+            }
+
+        }
+
+        keyboard.close();
+
+
+
+
+
+
 
 
 
@@ -15,15 +84,8 @@ public class Main {
         Pokemon nintetales = new Pokemon("Ninetales","Fire","3'07\"",43.9,"It is said to live 1,000 years, and each of its tails is loaded with supernatural powers.");
 
 
-        ListaPokemon pokemones = new ListaPokemon();
 
-        pokemones.addPokemon(pikachu);
-        pokemones.addPokemon(articuno);
-        pokemones.addPokemon(nintetales);
 
-        pokemones.deletePokemon("Pikachu");
-
-        System.out.println(pokemones.returnPokemon(1));
 
 
 

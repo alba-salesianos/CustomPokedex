@@ -6,6 +6,7 @@ public class Pokemon {
     protected String height;
     protected double weight;
     protected String description;
+    protected boolean isCaught = false;
     public Pokemon(String name, String type, String height, double weight, String description){
         this.name = name;
         this.type = type;
@@ -17,9 +18,6 @@ public class Pokemon {
     public Pokemon(String name, String type){
         this.name = name;
         this.type = type;
-        this.height = height;
-        this.weight = weight;
-        this.description = description;
     }
 
     public String getName() {
@@ -56,16 +54,26 @@ public class Pokemon {
 
     @Override
     public String toString() {
-        String msg = "\n" + "══════════════════════════════════════════════════════════════";
-        msg += "\n" + this.name.toUpperCase();
-        msg += "\n" + this.type.toUpperCase();
-        msg += "\n" + "HT    " + this.height;
-        msg += "\n" + "WT    " + this.weight + "lb";
-        msg += "\n" + "──█──█──█──█──────────────────────────────────────█──█──█──█──";
-        msg += "\n" + this.description;
-        msg += "\n" + "══════════════════════════════════════════════════════════════";
-        return msg;
-
-        //TODO: poner que si no hay datos aparezcan interrogaciones
+        if(isCaught){
+            String msg = "\n" + "══════════════════════════════════════════════════════════════";
+            msg += "\n" + this.name.toUpperCase();
+            msg += "\n" + this.type.toUpperCase();
+            msg += "\n" + "HT    " + this.height;
+            msg += "\n" + "WT    " + this.weight + "lb";
+            msg += "\n" + "──█──█──█──█──────────────────────────────────────█──█──█──█──";
+            msg += "\n" + this.description;
+            msg += "\n" + "══════════════════════════════════════════════════════════════";
+            return msg;
+        } else {
+            String msg = "\n" + "══════════════════════════════════════════════════════════════";
+            msg += "\n" + this.name.toUpperCase();
+            msg += "\n" + this.type.toUpperCase();
+            msg += "\n" + "HT    ??????";
+            msg += "\n" + "WT    ??????";
+            msg += "\n" + "──█──█──█──█──────────────────────────────────────█──█──█──█──";
+            msg += "\n" + "??????";
+            msg += "\n" + "══════════════════════════════════════════════════════════════";
+            return msg;
+        }
     }
 }
